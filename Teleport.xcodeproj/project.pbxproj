@@ -15,6 +15,9 @@
 		AC17A2EA2028CB5E00B05CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC17A2E82028CB5E00B05CDD /* LaunchScreen.storyboard */; };
 		AC17A2F92028CF0600B05CDD /* InputCommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2F82028CF0600B05CDD /* InputCommandViewController.swift */; };
 		AC17A2FB2028CF9E00B05CDD /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2FA2028CF9E00B05CDD /* ConversationViewController.swift */; };
+		AC17A2FE2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2FD2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift */; };
+		AC17A3002028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2FF2028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift */; };
+		AC17A3022028D54000B05CDD /* InputCommandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A3012028D54000B05CDD /* InputCommandCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		AC17A2EB2028CB5E00B05CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC17A2F82028CF0600B05CDD /* InputCommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCommandViewController.swift; sourceTree = "<group>"; };
 		AC17A2FA2028CF9E00B05CDD /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		AC17A2FD2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputCommand+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		AC17A2FF2028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputCommand+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		AC17A3012028D54000B05CDD /* InputCommandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCommandCollectionViewCell.swift; sourceTree = "<group>"; };
 		E61FF4A8C1718179C2EBC3FD /* Pods-Teleport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleport.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teleport/Pods-Teleport.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +118,7 @@
 		AC17A2F42028CBFA00B05CDD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AC17A2FC2028D3A400B05CDD /* Extensions */,
 				AC17A2E12028CB5E00B05CDD /* ViewController.swift */,
 				AC17A2F82028CF0600B05CDD /* InputCommandViewController.swift */,
 				AC17A2FA2028CF9E00B05CDD /* ConversationViewController.swift */,
@@ -130,6 +137,7 @@
 		AC17A2F62028CC0F00B05CDD /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				AC17A3012028D54000B05CDD /* InputCommandCollectionViewCell.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -139,6 +147,15 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		AC17A2FC2028D3A400B05CDD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC17A2FD2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift */,
+				AC17A2FF2028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BC638A6FF13DC8600A004CF3 /* Pods */ = {
@@ -274,7 +291,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC17A2E22028CB5E00B05CDD /* ViewController.swift in Sources */,
+				AC17A3002028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift in Sources */,
 				AC17A2F92028CF0600B05CDD /* InputCommandViewController.swift in Sources */,
+				AC17A2FE2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift in Sources */,
+				AC17A3022028D54000B05CDD /* InputCommandCollectionViewCell.swift in Sources */,
 				AC17A2FB2028CF9E00B05CDD /* ConversationViewController.swift in Sources */,
 				AC17A2E02028CB5E00B05CDD /* AppDelegate.swift in Sources */,
 			);
