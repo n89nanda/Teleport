@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F3AD50CF52C445C1B9F3BF1 /* Pods_Teleport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225863A5AEB7B0534731EA05 /* Pods_Teleport.framework */; };
 		AC17A2E02028CB5E00B05CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2DF2028CB5E00B05CDD /* AppDelegate.swift */; };
 		AC17A2E22028CB5E00B05CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2E12028CB5E00B05CDD /* ViewController.swift */; };
 		AC17A2E52028CB5E00B05CDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC17A2E32028CB5E00B05CDD /* Main.storyboard */; };
 		AC17A2E72028CB5E00B05CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC17A2E62028CB5E00B05CDD /* Assets.xcassets */; };
 		AC17A2EA2028CB5E00B05CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC17A2E82028CB5E00B05CDD /* LaunchScreen.storyboard */; };
+		AC17A2F92028CF0600B05CDD /* InputCommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2F82028CF0600B05CDD /* InputCommandViewController.swift */; };
+		AC17A2FB2028CF9E00B05CDD /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2FA2028CF9E00B05CDD /* ConversationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		225863A5AEB7B0534731EA05 /* Pods_Teleport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A386505489458301AFC8B55 /* Pods-Teleport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teleport/Pods-Teleport.debug.xcconfig"; sourceTree = "<group>"; };
 		AC17A2DC2028CB5E00B05CDD /* Teleport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC17A2DF2028CB5E00B05CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC17A2E12028CB5E00B05CDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		AC17A2E62028CB5E00B05CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC17A2E92028CB5E00B05CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC17A2EB2028CB5E00B05CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC17A2F82028CF0600B05CDD /* InputCommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCommandViewController.swift; sourceTree = "<group>"; };
+		AC17A2FA2028CF9E00B05CDD /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		E61FF4A8C1718179C2EBC3FD /* Pods-Teleport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleport.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teleport/Pods-Teleport.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3AD50CF52C445C1B9F3BF1 /* Pods_Teleport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63D83C361AC729462F7817CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				225863A5AEB7B0534731EA05 /* Pods_Teleport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC17A2D32028CB5E00B05CDD = {
 			isa = PBXGroup;
 			children = (
 				AC17A2DE2028CB5E00B05CDD /* Teleport */,
 				AC17A2DD2028CB5E00B05CDD /* Products */,
+				BC638A6FF13DC8600A004CF3 /* Pods */,
+				63D83C361AC729462F7817CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				AC17A2E12028CB5E00B05CDD /* ViewController.swift */,
+				AC17A2F82028CF0600B05CDD /* InputCommandViewController.swift */,
+				AC17A2FA2028CF9E00B05CDD /* ConversationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -120,6 +141,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		BC638A6FF13DC8600A004CF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A386505489458301AFC8B55 /* Pods-Teleport.debug.xcconfig */,
+				E61FF4A8C1718179C2EBC3FD /* Pods-Teleport.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC17A2EE2028CB5E00B05CDD /* Build configuration list for PBXNativeTarget "Teleport" */;
 			buildPhases = (
+				86BCF05AFE215848E5FCDAE2 /* [CP] Check Pods Manifest.lock */,
 				AC17A2D82028CB5E00B05CDD /* Sources */,
 				AC17A2D92028CB5E00B05CDD /* Frameworks */,
 				AC17A2DA2028CB5E00B05CDD /* Resources */,
+				D64E767E435122A72AE16687 /* [CP] Embed Pods Frameworks */,
+				741A4A82B023E3DA87DD924B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,12 +220,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		741A4A82B023E3DA87DD924B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teleport/Pods-Teleport-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86BCF05AFE215848E5FCDAE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D64E767E435122A72AE16687 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teleport/Pods-Teleport-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC17A2D82028CB5E00B05CDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AC17A2E22028CB5E00B05CDD /* ViewController.swift in Sources */,
+				AC17A2F92028CF0600B05CDD /* InputCommandViewController.swift in Sources */,
+				AC17A2FB2028CF9E00B05CDD /* ConversationViewController.swift in Sources */,
 				AC17A2E02028CB5E00B05CDD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +411,7 @@
 		};
 		AC17A2EF2028CB5E00B05CDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A386505489458301AFC8B55 /* Pods-Teleport.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +428,7 @@
 		};
 		AC17A2F02028CB5E00B05CDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61FF4A8C1718179C2EBC3FD /* Pods-Teleport.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
