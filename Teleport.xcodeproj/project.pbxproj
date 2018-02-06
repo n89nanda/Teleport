@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4F3AD50CF52C445C1B9F3BF1 /* Pods_Teleport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225863A5AEB7B0534731EA05 /* Pods_Teleport.framework */; };
 		AC17A2E02028CB5E00B05CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2DF2028CB5E00B05CDD /* AppDelegate.swift */; };
-		AC17A2E22028CB5E00B05CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2E12028CB5E00B05CDD /* ViewController.swift */; };
 		AC17A2E52028CB5E00B05CDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC17A2E32028CB5E00B05CDD /* Main.storyboard */; };
 		AC17A2E72028CB5E00B05CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC17A2E62028CB5E00B05CDD /* Assets.xcassets */; };
 		AC17A2EA2028CB5E00B05CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC17A2E82028CB5E00B05CDD /* LaunchScreen.storyboard */; };
@@ -18,6 +17,9 @@
 		AC17A2FE2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2FD2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift */; };
 		AC17A3002028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A2FF2028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift */; };
 		AC17A3022028D54000B05CDD /* InputCommandCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A3012028D54000B05CDD /* InputCommandCollectionViewCell.swift */; };
+		AC17A3042028E8A700B05CDD /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A3032028E8A700B05CDD /* RoundedLabel.swift */; };
+		AC17A3062028EA1700B05CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A3052028EA1700B05CDD /* ViewController.swift */; };
+		AC17A309202A1DEA00B05CDD /* InputCommandsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A308202A1DEA00B05CDD /* InputCommandsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,6 @@
 		4A386505489458301AFC8B55 /* Pods-Teleport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teleport/Pods-Teleport.debug.xcconfig"; sourceTree = "<group>"; };
 		AC17A2DC2028CB5E00B05CDD /* Teleport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC17A2DF2028CB5E00B05CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC17A2E12028CB5E00B05CDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC17A2E42028CB5E00B05CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC17A2E62028CB5E00B05CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC17A2E92028CB5E00B05CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +36,9 @@
 		AC17A2FD2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputCommand+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		AC17A2FF2028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputCommand+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		AC17A3012028D54000B05CDD /* InputCommandCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCommandCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC17A3032028E8A700B05CDD /* RoundedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
+		AC17A3052028EA1700B05CDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC17A308202A1DEA00B05CDD /* InputCommandsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCommandsList.swift; sourceTree = "<group>"; };
 		E61FF4A8C1718179C2EBC3FD /* Pods-Teleport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleport.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teleport/Pods-Teleport.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +83,7 @@
 		AC17A2DE2028CB5E00B05CDD /* Teleport */ = {
 			isa = PBXGroup;
 			children = (
+				AC17A307202A1D9E00B05CDD /* Model */,
 				AC17A2F72028CC2500B05CDD /* Services */,
 				AC17A2F32028CBF200B05CDD /* Presenter */,
 				AC17A2F22028CBEB00B05CDD /* Interactor */,
@@ -119,9 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				AC17A2FC2028D3A400B05CDD /* Extensions */,
-				AC17A2E12028CB5E00B05CDD /* ViewController.swift */,
 				AC17A2F82028CF0600B05CDD /* InputCommandViewController.swift */,
 				AC17A2FA2028CF9E00B05CDD /* ConversationViewController.swift */,
+				AC17A3052028EA1700B05CDD /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				AC17A3012028D54000B05CDD /* InputCommandCollectionViewCell.swift */,
+				AC17A3032028E8A700B05CDD /* RoundedLabel.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -156,6 +162,14 @@
 				AC17A2FF2028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC17A307202A1D9E00B05CDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC17A308202A1DEA00B05CDD /* InputCommandsList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BC638A6FF13DC8600A004CF3 /* Pods */ = {
@@ -290,13 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC17A2E22028CB5E00B05CDD /* ViewController.swift in Sources */,
+				AC17A3042028E8A700B05CDD /* RoundedLabel.swift in Sources */,
 				AC17A3002028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift in Sources */,
 				AC17A2F92028CF0600B05CDD /* InputCommandViewController.swift in Sources */,
 				AC17A2FE2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift in Sources */,
 				AC17A3022028D54000B05CDD /* InputCommandCollectionViewCell.swift in Sources */,
 				AC17A2FB2028CF9E00B05CDD /* ConversationViewController.swift in Sources */,
+				AC17A3062028EA1700B05CDD /* ViewController.swift in Sources */,
 				AC17A2E02028CB5E00B05CDD /* AppDelegate.swift in Sources */,
+				AC17A309202A1DEA00B05CDD /* InputCommandsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

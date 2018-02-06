@@ -13,11 +13,13 @@ let inputCommandCollectionViewCellId = "inputCommandCollectionViewCellId"
 extension InputCommandViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return InputCommands().numberOfCommands()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let inputCommadCollectionViewCell = inputCommandCollectionView.dequeueReusableCell(withReuseIdentifier: inputCommandCollectionViewCellId, for: indexPath)
+        let inputCommadCollectionViewCell = inputCommandCollectionView.dequeueReusableCell(withReuseIdentifier: inputCommandCollectionViewCellId, for: indexPath) as! InputCommandCollectionViewCell
+        print(InputCommands().commands[indexPath.row])
+        inputCommadCollectionViewCell.inputCommandLabel.text = InputCommands().commands[indexPath.row]
         return inputCommadCollectionViewCell
     }
 }

@@ -10,5 +10,5 @@ import UIKit
 
 class InputCommandCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var inputCommandLabel: UILabel!
+    @IBOutlet weak var inputCommandLabel: RoundedLabel!
 }
