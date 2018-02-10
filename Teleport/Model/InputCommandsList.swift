@@ -9,12 +9,12 @@
 import Foundation
 
 struct InputCommands {
-    let commands = ["Sign Up"]
-//                    "Login",
-//                    "Account",
-//                    "Devices",
-//                    "Gallery",
-//                    "Notifications",]
+    let commands = ["Sign Up",
+                    "Login",
+                    "Account",
+                    "Devices",
+                    "Gallery",
+                    "Notifications"]
     
     func numberOfCommands () -> Int {
         return commands.count

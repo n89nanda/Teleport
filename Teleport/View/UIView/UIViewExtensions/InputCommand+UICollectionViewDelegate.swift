@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension InputCommandViewController: UICollectionViewDelegate {
+extension InputCommandTableViewCell: UICollectionViewDelegate {
 
 
 }

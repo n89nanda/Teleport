@@ -31,6 +31,7 @@ class RoundedLabel: UILabel {
             numberOfLines = wordWrap ? 0 : 1
         }
     }
+ 
     @IBInspectable var borderColor: UIColor = UIColor.white {
         didSet {
             layer.borderColor = borderColor.cgColor

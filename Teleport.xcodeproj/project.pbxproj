@@ -20,6 +20,9 @@
 		AC17A3042028E8A700B05CDD /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A3032028E8A700B05CDD /* RoundedLabel.swift */; };
 		AC17A3062028EA1700B05CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A3052028EA1700B05CDD /* ViewController.swift */; };
 		AC17A309202A1DEA00B05CDD /* InputCommandsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17A308202A1DEA00B05CDD /* InputCommandsList.swift */; };
+		B80A3C65202E6A6900B741D3 /* InputCommand+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80A3C64202E6A6900B741D3 /* InputCommand+UITableViewDataSource.swift */; };
+		B80A3C67202E6B2500B741D3 /* InputCommandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80A3C66202E6B2500B741D3 /* InputCommandTableViewCell.swift */; };
+		B80A3C6A202E6E7700B741D3 /* InputCommand+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80A3C69202E6E7700B741D3 /* InputCommand+UITableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		AC17A3032028E8A700B05CDD /* RoundedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
 		AC17A3052028EA1700B05CDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC17A308202A1DEA00B05CDD /* InputCommandsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCommandsList.swift; sourceTree = "<group>"; };
+		B80A3C64202E6A6900B741D3 /* InputCommand+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputCommand+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		B80A3C66202E6B2500B741D3 /* InputCommandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCommandTableViewCell.swift; sourceTree = "<group>"; };
+		B80A3C69202E6E7700B741D3 /* InputCommand+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputCommand+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		E61FF4A8C1718179C2EBC3FD /* Pods-Teleport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleport.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teleport/Pods-Teleport.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +129,7 @@
 		AC17A2F42028CBFA00B05CDD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AC17A2FC2028D3A400B05CDD /* Extensions */,
+				AC17A2FC2028D3A400B05CDD /* ViewControllerExtensions */,
 				AC17A2F82028CF0600B05CDD /* InputCommandViewController.swift */,
 				AC17A2FA2028CF9E00B05CDD /* ConversationViewController.swift */,
 				AC17A3052028EA1700B05CDD /* ViewController.swift */,
@@ -142,8 +148,10 @@
 		AC17A2F62028CC0F00B05CDD /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				B80A3C68202E6C5100B741D3 /* UIViewExtensions */,
 				AC17A3012028D54000B05CDD /* InputCommandCollectionViewCell.swift */,
 				AC17A3032028E8A700B05CDD /* RoundedLabel.swift */,
+				B80A3C66202E6B2500B741D3 /* InputCommandTableViewCell.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -155,13 +163,13 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		AC17A2FC2028D3A400B05CDD /* Extensions */ = {
+		AC17A2FC2028D3A400B05CDD /* ViewControllerExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				AC17A2FD2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift */,
-				AC17A2FF2028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift */,
+				B80A3C64202E6A6900B741D3 /* InputCommand+UITableViewDataSource.swift */,
+				B80A3C69202E6E7700B741D3 /* InputCommand+UITableViewDelegate.swift */,
 			);
-			path = Extensions;
+			path = ViewControllerExtensions;
 			sourceTree = "<group>";
 		};
 		AC17A307202A1D9E00B05CDD /* Model */ = {
@@ -170,6 +178,15 @@
 				AC17A308202A1DEA00B05CDD /* InputCommandsList.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B80A3C68202E6C5100B741D3 /* UIViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC17A2FD2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift */,
+				AC17A2FF2028D49300B05CDD /* InputCommand+UICollectionViewDelegate.swift */,
+			);
+			path = UIViewExtensions;
 			sourceTree = "<group>";
 		};
 		BC638A6FF13DC8600A004CF3 /* Pods */ = {
@@ -273,13 +290,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Teleport-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D64E767E435122A72AE16687 /* [CP] Embed Pods Frameworks */ = {
@@ -310,9 +330,12 @@
 				AC17A2FE2028D3CC00B05CDD /* InputCommand+UICollectionViewDataSource.swift in Sources */,
 				AC17A3022028D54000B05CDD /* InputCommandCollectionViewCell.swift in Sources */,
 				AC17A2FB2028CF9E00B05CDD /* ConversationViewController.swift in Sources */,
+				B80A3C67202E6B2500B741D3 /* InputCommandTableViewCell.swift in Sources */,
 				AC17A3062028EA1700B05CDD /* ViewController.swift in Sources */,
+				B80A3C65202E6A6900B741D3 /* InputCommand+UITableViewDataSource.swift in Sources */,
 				AC17A2E02028CB5E00B05CDD /* AppDelegate.swift in Sources */,
 				AC17A309202A1DEA00B05CDD /* InputCommandsList.swift in Sources */,
+				B80A3C6A202E6E7700B741D3 /* InputCommand+UITableViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,15 +10,18 @@ import UIKit
 
 let inputCommandCollectionViewCellId = "inputCommandCollectionViewCellId"
 
-extension InputCommandViewController: UICollectionViewDataSource {
+extension InputCommandTableViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print (InputCommands().numberOfCommands())
         return InputCommands().numberOfCommands()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let inputCommadCollectionViewCell = inputCommandCollectionView.dequeueReusableCell(withReuseIdentifier: inputCommandCollectionViewCellId, for: indexPath) as! InputCommandCollectionViewCell
         print(InputCommands().commands[indexPath.row])
+//        inputCommadCollectionViewCell.inputCommandLabel.
+//        inputCommadCollectionViewCell.inputCommandLabel.sizeToFit()
         inputCommadCollectionViewCell.inputCommandLabel.text = InputCommands().commands[indexPath.row]
         return inputCommadCollectionViewCell
     }

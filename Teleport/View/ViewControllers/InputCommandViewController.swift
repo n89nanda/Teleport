@@ -10,12 +10,14 @@ import UIKit
 
 class InputCommandViewController: UIViewController {
 
-    @IBOutlet weak var inputCommandCollectionView: UICollectionView!
+   
+    @IBOutlet weak var inputCommandTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Remove default line seperator from table view
+        self.inputCommandTableView.separatorStyle = .none
 
     }
 
